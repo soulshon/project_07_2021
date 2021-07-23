@@ -59,4 +59,55 @@
 // console.log(++incr);
 // console.log(--decr);
 //  console. log(11%4);
-console.log(2*2+2!=='8');
+//console.log(2*2+2!=='8');
+// 3) Задайте пользователю по два раза вопросы:
+//     - 'Один из последних просмотренных фильмов?'
+//     - 'На сколько оцените его?'
+// Ответы стоит поместить в отдельные переменные
+// Записать ответы в объект movies в формате: 
+//     movies: {
+//         'logan': '8.1'
+//     }
+
+let numberOfFilms = prompt('Сколько фильмов вы уже посмотрели?',''); //вариант из решебника const numberOfFilms = prompt('Сколько фильмов вы уже посмотрели?','');
+// //console.log (numberOfFilms);
+let personalMovieDB = {
+    count: `${numberOfFilms}`, //вариант из решебника  count: numberOfFilms
+    movies: {},                  //вариант  из решебника  movies: {},
+    actors: {},                  //вариант  из решебника  actors: {},
+    genres: [],
+    privat: false
+};
+
+// alert(personalMovieDB.count);
+
+//твоя жалка попытка 1:
+// let question1 = prompt('Один из последних просмотренных фильмов?'),
+//     question2 = prompt('На сколько оцените его?'); 
+
+// let question1Creat =  question1,
+//     question2Creat =  question2;
+
+// let movies = {
+//     questFilm:question1Creat,
+//     estimate:question2Creat};
+
+// console.log(movies);
+//твоя жалка попытка 2:
+// let question1 = prompt('Один из последних просмотренных фильмов?'),
+//     question2 = prompt('На сколько оцените его?'), 
+//     question1Creat =  question1,
+//     question2Creat =  question2;
+// personalMovieDB.movies[question1] = question1Creat;
+// personalMovieDB.movies[question2] = question2Creat;
+// console.log(personalMovieDB);
+//Что нужно было сделать на самом деле
+let a = prompt('Один из последних просмотренных фильмов?'),
+    b = prompt('На сколько оцените его?'), 
+    c = prompt('Один из последних просмотренных фильмов?'),
+    d = prompt('На сколько оцените его?');
+personalMovieDB.movies[a] = b;
+personalMovieDB.movies[c] = d;
+
+
+console.log(personalMovieDB);
