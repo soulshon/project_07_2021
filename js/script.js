@@ -311,7 +311,7 @@ function start (){
         numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели?','');
     }
 }
-// start();
+start();
 
 const personalMovieDB = {
     count: numberOfFilms, 
@@ -350,7 +350,7 @@ function detectPersonalLevel(){
     }
     // detectPersonalLevel();
 
-    console.log(personalMovieDB);
+   
 
     //моя жалка попытка
     // function showMyDB (){
@@ -368,13 +368,12 @@ function detectPersonalLevel(){
 
     showMyDB (personalMovieDB.privat);
 
-    function writeYourGenres(){
-        for (let i = 1; i <=3; i++){
-            // const genre = prompt(`'Ваш любимый жанр под номером ${i}', ''`); //вариант исполнения 1
-            // personalMovieDB.genres[i-1]=genre;
-            personalMovieDB.genres [i-1] = prompt (`Ваш любимый жанр под номером ${i}`);
-        }
-    }
-    writeYourGenres();
-    //Повторить 04.09.2021 отдельным фйалом
+    // function writeYourGenres(){
+    //     for (let i = 1; i <=3; i++){
+    //         // const genre = prompt(`'Ваш любимый жанр под номером ${i}', ''`); //вариант исполнения 1
+    //         // personalMovieDB.genres[i-1]=genre;
+    //         personalMovieDB.genres [i-1] = prompt (`Ваш любимый жанр под номером ${i}`);
+    //     }
+    // }
+    // writeYourGenres();
     
